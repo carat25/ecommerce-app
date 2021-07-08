@@ -1,0 +1,18 @@
+.QuantityCount {
+    background-color: #EED6D3;
+    color: #67595E;
+}
+
+.Button {
+    border: 2px solid #D8A7B1;
+    border-radius: 5px;
+    background-color: #EEEDE7;
+    color: #67595E;
+    cursor: pointer;
+}
+
+.Button:hover {
+    background-color: #D8A7B1;
+    text-decoration: underline;
+    color: #EEEDE7;
+}
