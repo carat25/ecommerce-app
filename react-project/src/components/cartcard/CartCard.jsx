@@ -4,13 +4,9 @@ import { QuantityCount } from "../buttons/QuantityCount";
 import { DeleteInCart } from "../buttons/DeleteInCart";
 import { deleteCartItem, updateCart } from "../../services/CartItems";
 
-
 const CartCard = ({ item, onCartChanged }) => {
-  const { product, quantity } = item;
-  const { imageURL, name, price, id } = product;
- 
-
-
+  const { product, quantity, variant } = item;
+  const { imageURL, name, price } = product;
 
   const onDecrementHandler = async () => {
     const updatedItem = { ...item, quantity: quantity - 1 };
@@ -27,14 +23,17 @@ const CartCard = ({ item, onCartChanged }) => {
     await deleteCartItem(item.id);
     onCartChanged();
   };
+  const calculateItemPrice = () => {
+    return quantity * price;
+  }
 
   return (
     <div>
       <div className={styles.CartCard}>
-        <img className={styles.img} src={imageURL} alt="product"></img>
         <div className={styles.details}>
+          <img className={styles.img} src={imageURL} alt="product"></img>
           <h4 className={styles.name}>{name}</h4>
-          <h5 className={styles.price}>$ {price}</h5>
+          <h5 className={styles.name}>Variant: {variant}</h5>
           <QuantityCount
             className={styles.qtycount}
             quantity={quantity}
@@ -43,8 +42,10 @@ const CartCard = ({ item, onCartChanged }) => {
           />
           <DeleteInCart onClick={handleDelete} className={styles.delete} />
         </div>
+        <h4 className={styles.name}>${calculateItemPrice()}</h4>
       </div>
     </div>
+ 
   );
 };
 

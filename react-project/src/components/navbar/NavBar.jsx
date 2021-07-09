@@ -11,7 +11,7 @@ export const NavBar = ({cartItems}) => {
       <Link className={styles.NavBar} to="/HomePage">Home</Link>
       <div>
         <Link className={styles.NavBar} to="/CartPage">Cart</Link>
-        <span className={styles.Count}>{cartItems.length}</span>
+        <span className={styles.Count}>({cartItems.length})</span>
       </div>
     </nav>
   );

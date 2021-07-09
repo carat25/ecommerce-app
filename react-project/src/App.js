@@ -31,7 +31,9 @@ const App = () => {
   const onCartChanged = () => getCartItems();
 
   return (
-    <div className={styles.App}>
+    // <div className={styles.App}>
+    <div 
+    className={styles.App}>
       <Router>
           <header>
             <NavBar cartItems={cartItems}/>
@@ -47,7 +49,7 @@ const App = () => {
               <CartPage onCartChanged={onCartChanged} cartItems={cartItems}/>
             </Route>
             <Route path="/ProductInfo/:id">
-              <ProductInfo />
+              <ProductInfo onCartChanged={onCartChanged}/>
             </Route>
           </Switch>
           <footer className={styles.footer}>

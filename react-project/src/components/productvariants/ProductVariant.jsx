@@ -1,10 +1,10 @@
 
 
-const ProductVariant = ({variants}) => {
+const ProductVariant = ({variants, onSelect}) => {
   return (
     <div>
-      <select>
-        {variants.map((variant) => <option>{variant}</option>)}
+      <select onInput={onSelect}>
+        {variants.map((variant) => <option key={variant}>{variant}</option>)}
       </select>
     </div>
   );

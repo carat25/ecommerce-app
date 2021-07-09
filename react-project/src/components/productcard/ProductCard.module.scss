@@ -3,10 +3,9 @@
     justify-content: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: #EED6D3;
+    background-color: #EC9EC0;
     border-radius: 10px;
     padding: 20px;
-    
 }
 
 .img {
@@ -24,6 +23,9 @@
 
 .name {
     color: #67595E;
+    font-family: 'Uchen', serif;
+    font-size: 1.5rem;
+    
 }
 .name:hover {
     color: #EEEDE7;
@@ -32,4 +34,6 @@
 
 .price {
     color: #67595E;
+    font-family: 'Uchen', serif;
+    font-size: 1.2rem;
 }

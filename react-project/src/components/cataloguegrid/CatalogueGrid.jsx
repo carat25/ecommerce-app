@@ -16,13 +16,13 @@ const CatalogueGrid = ({onCartChanged}) => {
   }, []);
 
   return (
-    <div>
+
       <div className={styles.CatalogueGrid}>
         {products.map((product) => (
           <ProductCard key={product.id} product={product} onCartChanged={onCartChanged}/>
         ))}
       </div>
-    </div>
+
   );
 };
 

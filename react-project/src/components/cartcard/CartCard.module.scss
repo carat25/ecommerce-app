@@ -1,8 +1,8 @@
 .CartCard {
     display: flex;
-    justify-content: center;
-
-   
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #EED6D3;
 }
 
 
@@ -17,6 +17,3 @@
     color: #67595E;
 }
 
-.price {
-    color: #67595E;
-}
