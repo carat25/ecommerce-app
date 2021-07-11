@@ -1,20 +1,27 @@
 .QuantityCount {
-    background-color: #EC9EC0;
+    background-color: #f1f2f6;
     color: #67595E;
-    font-family: 'Uchen', serif;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bolder;
+
 }
 
 .Button {
-    border: 2px solid #D8A7B1;
+    border: 2px solid #cdcfe9;
     border-radius: 5px;
-    background-color: #EEEDE7;
+    background-color: #cdcfe9;
     color: #67595E;
     cursor: pointer;
-    font-family: 'Uchen', serif;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bolder;
+    margin: 10px 0px;
 }
 
 .Button:hover {
-    background-color: #D8A7B1;
+    background-color: #ebc6d1;
     text-decoration: underline;
-    color: #EEEDE7;
+    color: #67595E;
+    border: 2px solid #ebc6d1;
+    font-weight: bolder;
+    margin: 10px 0px;
 }

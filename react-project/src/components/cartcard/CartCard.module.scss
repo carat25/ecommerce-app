@@ -1,19 +1,35 @@
 .CartCard {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border-bottom: 1px solid #EED6D3;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  border-bottom: 1px solid #67595e;
+  border-top: 1px solid #67595e;
+  background-color: #f1f2f6;
+  margin: 0px 200px;
 }
 
-
-
 .img {
-    width: 150px;
-    padding: 20px;
-
+  width: 200px;
+  padding: 20px;
 }
 
 .name {
-    color: #67595E;
+  color: #67595e;
+  font-size: 1.2rem;
+  font-family: "Josefin Slab", serif;
+  font-weight: bolder;
 }
 
+.variant {
+  color: #67595e;
+  font-size: 1rem;
+  font-family: "Josefin Slab", serif;
+  font-weight: bolder;
+}
+
+.price {
+    color: #67595e;
+    font-size: 1.2rem;
+    font-family: "Josefin Slab", serif;
+    font-weight: bolder;
+    text-align:right;
+}

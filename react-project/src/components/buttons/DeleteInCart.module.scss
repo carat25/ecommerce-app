@@ -1,10 +1,4 @@
-.AddToCart{
-    background-color: #f1f2f6;
-    font-family: 'Josefin Slab', serif;
-    font-weight: bolder;
-}
-
-.AddButton {
+.Delete {
     border: 2px solid #cdcfe9;
     border-radius: 5px;
     background-color: #cdcfe9;
@@ -14,7 +8,7 @@
     font-weight: bolder;
 }
 
-.AddButton:hover {
+.Delete:hover{
     background-color: #ebc6d1;
     text-decoration: underline;
     color: #67595E;
