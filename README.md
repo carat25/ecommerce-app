@@ -1,8 +1,9 @@
 # Sprinkles and Dreams - Ecommerce website
 Simple ecommerce website using React, Sass, Javascript and Firebase.
-
+![ecommerce_main](https://user-images.githubusercontent.com/84700649/131207321-4e484f62-3956-4713-8be1-75b62168697b.png)
 
 # Table of Contents
+
 * [Introduction](#introduction)
 * [Technologies](#technologies)
 * [Room for Improvement](#room-for-improvement)
