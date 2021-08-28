@@ -1,14 +1,21 @@
 .CartPage {
-    background-color: #D8A7B1;
+    background-color: #cdcfe9;
     
 }
 
-.container {
-    border: 1px solid #FF0080;
-    margin: 0px 100px;
-}
 
 .header {
     color: #67595E;
-    margin: 100px 0px 0px 100px;
+    margin: 100px 0px 0px 200px;
+    font-size: 2rem;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bolder;
+}
+
+.price {
+    text-align: right;
+
+    color: #67595E;
+    margin: 0px 200px;
+
 }

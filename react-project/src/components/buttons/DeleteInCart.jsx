@@ -1,8 +1,9 @@
+import styles from "./DeleteInCart.module.scss";
 
 export const DeleteInCart = ({ onClick }) => {
   return (
     <div>
-      <button onClick={onClick}>Delete</button>
+      <button className={styles.Delete} onClick={onClick}>Delete</button>
     </div>
   );
 };

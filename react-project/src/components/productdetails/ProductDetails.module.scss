@@ -1,5 +1,36 @@
 .ProductDetails {
-    display: flex;
-    justify-content: center;
-   
+  display: grid;
+  grid-template-columns: 1fr 2.4fr .6fr;
+  font-family: "Josefin Slab", serif;
+  width: 800px;
+  grid-gap: 10px;
+  background-color: #f1f2f6;
+  padding: 10px 10px;
 }
+
+.img {
+  width: 300px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.name {
+  color: #67595e;
+  font-family: "Josefin Slab", serif;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin: 10px 0px;
+}
+
+.desc {
+  color: #67595e;
+  font-family: "Josefin Slab", serif;
+  font-size: 1rem;
+  font-weight: bolder;
+  margin: 10px 0px;
+}
+

@@ -3,10 +3,9 @@
     justify-content: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: #EED6D3;
+    background-color: #f1f2f6;
     border-radius: 10px;
     padding: 20px;
-    
 }
 
 .img {
@@ -18,18 +17,25 @@
 }
 
 .link:hover {
-    color: #EEEDE7;
+    color: #ebc6d1;
     text-decoration: underline;
 }
 
 .name {
     color: #67595E;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    
 }
 .name:hover {
-    color: #EEEDE7;
+    color: #ebc6d1;
     text-decoration: underline;
 }
 
 .price {
     color: #67595E;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1rem;
+    font-weight: bolder;
 }

@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import ProductDetails from "../../components/productdetails";
 import { getProductById, getProducts } from "../../services/Products";
 import { useParams } from "react-router-dom";
+import styles from "./ProductPage.module.scss"
 
-const ProductPage = () => {
+const ProductPage = ({onCartChanged}) => {
   const [product, setProduct] = useState(null);
   let { id } = useParams();
 
@@ -18,14 +19,11 @@ const ProductPage = () => {
   }, []);
 
   return product === null ? null : (
-    <div>
+    <div className={styles.ProductPage}>
       <ProductDetails
         key={product.id}
-        img={product.imageURL}
-        name={product.name}
-        price={product.price}
-        description={product.description}
-        variants={product.variants}
+        product={product}
+        onCartChanged={onCartChanged}
       />
     </div>
   );

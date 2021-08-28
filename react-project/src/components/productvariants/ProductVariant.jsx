@@ -1,10 +1,10 @@
+import styles from "./ProductVariant.module.scss"
 
-
-const ProductVariant = ({variants}) => {
+const ProductVariant = ({variants, onSelect}) => {
   return (
-    <div>
-      <select>
-        {variants.map((variant) => <option>{variant}</option>)}
+    <div className={styles.variant}>
+      <select onInput={onSelect} className={styles.option} required>
+        {variants.map((variant) => <option key={variant} className={styles.option}>{variant}</option>)}
       </select>
     </div>
   );

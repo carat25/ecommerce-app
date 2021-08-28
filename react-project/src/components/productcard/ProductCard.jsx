@@ -3,14 +3,11 @@ import styles from "./ProductCard.module.scss";
 import { Link } from "react-router-dom";
 import { addCartItem } from "../../services/CartItems";
 
-
 const ProductCard = ({ product, onCartChanged }) => {
   const { imageURL, name, price, id } = product;
 
-
-
-  const handleOnAddToCart = (quantity) => {
-    addCartItem({ product, quantity });
+  const handleOnAddToCart = async (quantity) => {
+    await addCartItem({ product, quantity });
     onCartChanged();
   };
 
