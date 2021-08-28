@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ecommerce-app/static/css/main.18168673.chunk.css",
+    "main.js": "/ecommerce-app/static/js/main.2b99f414.chunk.js",
+    "main.js.map": "/ecommerce-app/static/js/main.2b99f414.chunk.js.map",
+    "runtime-main.js": "/ecommerce-app/static/js/runtime-main.301bd455.js",
+    "runtime-main.js.map": "/ecommerce-app/static/js/runtime-main.301bd455.js.map",
+    "static/js/2.8110111a.chunk.js": "/ecommerce-app/static/js/2.8110111a.chunk.js",
+    "static/js/2.8110111a.chunk.js.map": "/ecommerce-app/static/js/2.8110111a.chunk.js.map",
+    "static/js/3.2bd91d32.chunk.js": "/ecommerce-app/static/js/3.2bd91d32.chunk.js",
+    "static/js/3.2bd91d32.chunk.js.map": "/ecommerce-app/static/js/3.2bd91d32.chunk.js.map",
+    "index.html": "/ecommerce-app/index.html",
+    "static/css/main.18168673.chunk.css.map": "/ecommerce-app/static/css/main.18168673.chunk.css.map",
+    "static/js/2.8110111a.chunk.js.LICENSE.txt": "/ecommerce-app/static/js/2.8110111a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.301bd455.js",
+    "static/js/2.8110111a.chunk.js",
+    "static/css/main.18168673.chunk.css",
+    "static/js/main.2b99f414.chunk.js"
+  ]
+}
