@@ -1,5 +1,5 @@
 # Sprinkles and Dreams - Ecommerce website
-Simple ecommerce website using React, Sass and Firebase.
+Simple ecommerce website using React, Sass, Javascript and Firebase.
 
 
 # Table of Contents
