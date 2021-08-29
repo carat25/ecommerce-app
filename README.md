@@ -23,6 +23,7 @@ A simple ecommerce website created using React, styled using Sass and data store
 * React
 * Sass
 * Firebase
+* Javascript
 
 
 # Room for Improvement
