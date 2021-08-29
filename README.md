@@ -16,7 +16,7 @@ A simple ecommerce website created using React, styled using Sass and data store
 
 ![ecommerce_cart](https://user-images.githubusercontent.com/84700649/131207494-1df76fc6-2fd2-4361-9ae1-9738603ccc77.png)
 
-
+Demo site:  https://carat25.github.io/ecommerce-app/
 
 
 # Technologies
