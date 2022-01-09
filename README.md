@@ -29,9 +29,7 @@ Demo site:  https://carat25.github.io/ecommerce-app/
 # Room for Improvement
 
 Room for improvement:
-* Add product variants in the Homepage
-* Use useContext feature
-* Apply carousel feature to display products available in the homepage
+* Fix the carousel feature to display the products from firebase instead of from the assets folder and link the product card to each product display
 
 
 # Acknowledgement
