@@ -1,7 +1,11 @@
 import CartCard from "../../components/cartcard";
 import styles from "./CartPage.module.scss";
+import { useContext } from "react";
+import {CartContext} from "../../context/CartContext";
 
-const CartPage = ({ cartItems, onCartChanged }) => {
+
+const CartPage = () => {
+  const { cartItems, onCartChanged } = useContext(CartContext);
   const calculateTotalPrice = () => {
     return cartItems.reduce((sum, item) => {
       return sum + item.product.price * item.quantity;

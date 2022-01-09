@@ -2,8 +2,12 @@ import styles from "./CartCard.module.scss";
 import { QuantityCount } from "../buttons/QuantityCount";
 import { DeleteInCart } from "../buttons/DeleteInCart";
 import { deleteCartItem, updateCartItem } from "../../services/CartItems";
+import { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
 
-const CartCard = ({ item, onCartChanged }) => {
+
+const CartCard = ({ item }) => {
+  const { onCartChanged } = useContext(CartContext);
   const { product, quantity, variant } = item;
   const { imageURL, name, price } = product;
 

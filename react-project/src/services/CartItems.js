@@ -4,6 +4,7 @@ export const getItems = async () => {
   //method that will return collection reference
 
   const cartCollection = firestore.collection("cartItems");
+  
   const queryItem = await cartCollection.get();
 
   const documents = queryItem.docs;

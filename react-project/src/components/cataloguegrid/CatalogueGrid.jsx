@@ -1,10 +1,14 @@
 import ProductCard from "../productcard/ProductCard";
 import { getProducts } from "../../services/Products";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import styles from "./CatalogueGrid.module.scss";
+import ProductVariant from "../productvariants";
+import { CartContext } from "../../context/CartContext";
 
-const CatalogueGrid = ({onCartChanged}) => {
+
+const CatalogueGrid = () => {
   const [products, setProducts] = useState([]);
+  const { onCartChanged } = useContext(CartContext);
 
   const getItems = async () => {
     const items = await getProducts();
@@ -14,6 +18,7 @@ const CatalogueGrid = ({onCartChanged}) => {
   useEffect(() => {
     getItems();
   }, []);
+
 
   return (
 

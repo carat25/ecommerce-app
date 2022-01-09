@@ -2,19 +2,20 @@ import styles from "./ProductDetails.module.scss";
 import CardQuantity from "../cardquantity/CardQuantity";
 import ProductVariant from "../productvariants";
 import { addCartItem } from "../../services/CartItems";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { CartContext } from "../../context/CartContext";
 
-const ProductDetails = ({ product, onCartChanged }) => {
+const ProductDetails = ({ product }) => {
+  const { onCartChanged, onSelectHandler, variant, setVariant } =
+    useContext(CartContext);
   const { imageURL, name, price, description, variants } = product;
-  const [variant, setVariant] = useState(undefined);
 
-  const handleOnAddToCart = async(quantity) => {
+  const handleOnAddToCart = async (quantity) => {
+    if (quantity <= 0) {
+      return;
+    }
     await addCartItem({ product, quantity, variant });
     onCartChanged();
-  };
-
-  const onSelectHandler = (event) => {
-    setVariant(event.target.value);
   };
 
   useEffect(() => {
